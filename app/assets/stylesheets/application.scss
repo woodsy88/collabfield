@@ -1,9 +1,16 @@
-/* Bootstrap */
+// Bootstrap 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* Variables */
+// Variables 
 @import "base/variables";
 
-/* Partials - main css file */
+// Default styles
+@import "base/default";
+
+// Partials - main css file 
+@import "partials/*";
 @import "partials/layout/*";
+
+// Media queries for a responsive design
+@import "responsive/*";

@@ -1,5 +1,9 @@
 require "rails_helper"
 
+# With this code we simulate a visit to the login page, starting from the home page.
+# Then we fill the form and submit it. Finally, we check if we have the
+# #user-settings element on the navigation bar, which is available only for signed in users
+
 RSpec.feature "Login", :type => :feature do
   let(:user) { create(:user) }
 

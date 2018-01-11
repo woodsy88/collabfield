@@ -11,6 +11,7 @@ def seed_users
   end
 end
 
+puts '10 users created'
 
 def seed_categories
   hobby = ['Arts', 'Crafts', 'Sports', 'Sciences', 'Collecting', 'Reading', 'Other']
@@ -32,6 +33,9 @@ def seed_categories
   end
 end
 
+puts 'categories created'
+
+
 def seed_posts
   categories = Category.all
 
@@ -46,6 +50,8 @@ def seed_posts
     end
   end
 end
+
+puts '5 posts created'
 
 seed_users
 seed_categories

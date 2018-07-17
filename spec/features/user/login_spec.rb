@@ -6,6 +6,11 @@ require "rails_helper"
 
 RSpec.feature "Login", :type => :feature do
   let(:user) { create(:user) }
+  # Here we also use our created users factory and 
+  # the create method, which comes with the factory_girl gem.
+
+  # let method allows us to write memorized methods which we could 
+  # use across all specs within the context, the method was defined.
 
   scenario 'user navigates to the login page and succesfully logs in', js: true do
     user

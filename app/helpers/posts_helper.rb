@@ -22,4 +22,9 @@ module PostsHelper
     @posts.empty? ? 'posts/branch/no_posts' : 'shared/empty_partial'
   end
 
+  def post_format_partial_path
+    #  If a user is on the home page, render the post design for the home page. If a user is on the branch page, render the post design for the branch page
+    current_page?(root_path) ? 'posts/post/home_page' : 'posts/post/branch_page'
+  end
+
 end

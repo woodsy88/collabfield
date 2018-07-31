@@ -1,3 +1,4 @@
+
 <div class="col-sm-12">
   <%= form_tag(send("#{branch}_posts_path"), 
                :method => "get", 
@@ -7,11 +8,9 @@
                         params[:search], 
                         placeholder: search_placeholder, 
                         class: "form-control" %>
-    <!-- posts helper methods-->
     <%= render category_field_partial_path %>
   <% end %>
 </div><!-- col-sm-12 -->
-
 <!--
 
 The send method we dynamically generate a path to a 
@@ -22,6 +21,4 @@ Also we send an extra data field for the category if a
 specific category is selected. 
 
 If a user has selected a specific category, only search 
-results from that category will be returned.
-
--->
+results from that category will be returned. -->
